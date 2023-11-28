@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PatientCast</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; 
+}
+
+header {
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .branding {
+  font-size: 24px; 
+  color: #000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px; 
+}
+
+nav ul li a:hover {
+  color: #007bff; 
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  padding: 100px; 
+  height: 400px; 
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.welcome-section h1 {
+  margin-top: 300px;
+  font-size: 76px; 
+  color: #007bff; 
+  font-weight: bold; 
+  text-shadow: 2px 2px 4px #aaa; 
+}
+
+input[type="search"] {
+  padding: 15px 80px; 
+  border: 2px solid #007bff; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+button {
+  padding: 15px 20px; 
+  border: none;
+  background-color: #007bff; 
+  color: white; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+
+.partners-section {
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.partner img {
+  width: 300px; 
+  height: 250px;
+  object-fit: contain;
+}
+.partner p {
+  color: #000; 
+  text-align: center;
+  margin-top: 10px; 
+}
+
+.welcome-section p {
+  font-size: 20px; 
+  color: #333; 
+  line-height: 1.5; 
+  text-shadow: 1px 1px 2px #aaa; 
+  margin-top: 20px; 
+  padding: 0 15%; 
+  text-align: justify; 
+}
+.section-title {
+  text-align: center;
+  font-size: 24px; 
+  color: #007bff; 
+  margin-bottom: 30px; 
+  font-weight: bold; 
+  text-shadow: 1px 1px 2px #aaa; 
+}
+.partners-container {
+  display: flex;
+  justify-content: space-around;
+  /* 其他 flex 布局相关的样式 */
+}
+
+</style>
+</head>
+
+
+<body>
+<header>
+  <div class="branding">PatientCast</div>
+  <nav>
+    <ul>
+      <li><a href="website.html">Home</a></li>
+    <li><a href="patient_profile.html">Patient Profile</a></li>
+    <li><a href="live_wait_times.html">Live Wait Times</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="welcome-section">
+    <h1>Welcome to PatientCast</h1>
+    <p>An online website where our goal is to help patients get help as soon as possible</p>
+    <form action="#" method="get">
+      <input type="search" placeholder="Search for Hospital">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+  <section class="partners-section">
+    <h2 class="section-title">Recommended Hospitals based on your current location</h2>
+    <div class = "partners-container">
+    <div class="partner">
+      <a href="http://www.iuhealth.org">
+        <img src="images/indiana_university_health_logo.jpeg">
+      </a>
+      <p> Indiana University Heath Center</p>
+    </div>
+    <div class="partner">
+      <a href="https://www.riverbendhospital.com/">
+        <img src="images/river_band.png" >
+      </a>
+      <p> River Band Hospital </p>
+    </div>
+    <div class="partner">
+      <a href="http://www.uchicagomedicine.org">
+        <img src="images/uchicago.jpg">
+      </a>
+      <p> UChicago Medicine Center</p>
+    </div>
+  </div>
+  </section>
+</main>
+<footer>
+</footer>
+</body>
+</html>

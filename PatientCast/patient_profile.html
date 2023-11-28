@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Profile - PatientCast</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="branding">PatientCast</div>
+  <nav>
+    <ul>
+      <li><a href="website.html">Home</a></li>
+      <li><a href="patient_profile.html">Patient Profile</a></li>
+      <li><a href="live_wait_times.html">Live Wait Times</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="profile-section">
+    <h1>Patient Profile</h1>
+    <form>
+      <div class="form-field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-field">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <div class="form-field">
+        <label for="phone">Contact Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 999-999-9999" required>
+      </div>
+      <div class="form-field">
+        <label for="body-part">Select a Body Part:</label>
+        <select id="body-part" name="body-part">
+          <option value="orthopaedics">Orthopaedics</option>
+          <option value="ophthalmology">Ophthalmology</option>
+          <option value="brain">Brain</option>
+          <!-- Add other body parts as needed -->
+        </select>
+      </div>
+      <div class="form-field">
+        <button type="submit">Update Profile</button>
+      </div>
+    </form>
+  </section>
+</main>
+<footer>
+  <!-- Footer content here -->
+</footer>
+</body>
+</html>
